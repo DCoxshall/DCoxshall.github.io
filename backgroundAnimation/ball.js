@@ -31,11 +31,6 @@ class Ball {
   }
 
   update() {
-    if (!mouseIsPressed) {
-      this.x += this.xvel;
-      this.y += this.yvel;
-    }
-
     if (this.x < 20) {
       this.xvel++;
     } else if (this.x > width - 20) {
